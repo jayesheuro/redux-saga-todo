@@ -1,0 +1,66 @@
+@import "../../globalStyles.scss";
+.navbarWrapper{
+    text-align: center;
+    padding: 1.2% 0;
+    .title{
+        font-family: $textStylish;
+        color: $color1;
+        display: flex;
+        width: 100vw;
+        justify-content: space-between;
+        align-items: center;
+        @media(max-width:600px){
+            flex-direction: column;
+        }
+        .heading{
+            flex: 50%;
+            text-align: left;
+            padding-left: 2rem;
+            @media(max-width:600px){
+                margin-top: 2rem;
+                padding-left: 0;
+            }
+        }
+        .authButton{
+            flex: 20%;
+            text-align: right;
+            padding-right: 2rem;
+            display: flex;
+            justify-content: flex-end;
+            gap: 1rem;
+            @media(max-width:600px){
+                padding-right: 0;
+            }
+            .authLink{
+                color:white;
+                font-family: $textGeneral;
+                @media(max-width:600px){
+                    margin-top: 2rem;
+                    padding-right: 0;
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+    .addButton{
+        @include roundedButton($color3, $color1, 1.2rem);
+        text-decoration: none;
+        margin: 1.5% auto 1%;
+        width: 20%;
+        @media(max-width:600px){
+            width: 30%;
+        }
+    }
+    .logoutButton{
+        color: black;
+        background-color:white ;
+        border-radius: 5px;
+        padding: 0.5rem 1rem;
+        border: none;
+        font-size: 1.1rem;
+        @media(max-width:600px){
+            margin: 1rem;
+        }
+    }
+   
+}

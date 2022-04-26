@@ -1,0 +1,30 @@
+@import "../../globalStyles.scss";
+
+.inputField{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    label{
+        margin-top: 1rem;
+        margin-bottom: -0.5rem;
+        color: gray;
+        font-size: $normalFont;
+    }
+    input{
+        margin-top: 1rem;
+        padding: 2.5%;
+        margin-bottom: 5%;
+        border-radius: 0.5rem;
+        height: 1.2rem;
+        font-size: 1rem;
+        &:focus{
+            outline: none
+        }
+    }
+    .err{
+        font-size: 0.6rem;
+        color:red;
+        position: absolute;
+        bottom: -0.2rem;
+    }
+}

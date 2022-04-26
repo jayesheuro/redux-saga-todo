@@ -1,0 +1,43 @@
+@import "../../globalStyles.scss";
+
+.componentWrapper{
+    font-family: $textGeneral;
+    padding: 2rem 3%;
+
+    .componentForm{
+        .boxHeading{
+            text-align: center;
+            color: white;
+            font-size: 2rem;
+            font-weight: bolder;
+        }
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+        margin: 2% auto auto;
+        justify-content: center;
+        border: 0.1rem solid $color3;
+        padding: 3%;
+        @media(max-width:1024px){
+            width: 30vw;
+        }
+        @media(max-width:600px){
+            width: 80vw;
+        }
+        input{
+            margin-top: 1rem;
+            padding: 2.5%;
+            margin-bottom: 5%;
+            border-radius: 0.5rem;
+            height: 1.2rem;
+            font-size: 1rem;
+            &:focus{
+                outline: none
+            }
+        }
+        button{
+            @include roundedButton($color3, $color1, $normalFont);
+            margin-top: 5%;
+        }
+    }
+}

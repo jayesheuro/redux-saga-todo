@@ -1,0 +1,50 @@
+//color palette
+// $color1:#8D8DAA;
+// $color2:#DFDFDE;
+// $color3:#F7F5F2;
+// $color4:#F56D91;
+
+
+//color palette
+$color1:#F5F5F5;
+$color2:#FFD460;
+$color3:#F05454;
+$color4:#30475E;
+$color5:#121212;
+
+
+//font family
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600;700;800&display=swap');
+
+$textStylish:Pacifico;
+$textGeneral:Poppins;
+$largestFont:3rem;
+$largerFont:2rem;
+$largeFont:1.5rem;
+$normalFont:1rem;
+$smallFont:0.8rem;
+
+@mixin roundedButton($bg,$text,$size) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // padding: 0.5rem;
+    border-radius: 0.5rem;
+    font-size: $size;
+    background-color: $bg;
+    color: $text;
+    transition: all 0.3s ease;
+    height: 2.5rem;
+    &:hover{
+        transform: scale(1.02);
+    }
+}
+
+@mixin card($bg,$text){
+    padding: 1rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+    &:hover{
+        box-shadow: 0 0.5rem 1rem 0 rgba(0,0,0,0.2);
+    }
+}

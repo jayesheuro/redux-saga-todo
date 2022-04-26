@@ -1,0 +1,24 @@
+@import "../../globalStyles.scss";
+
+.editTodoWrapper{
+    font-family: $textGeneral;
+    form{
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+        margin: 2% auto auto;
+        justify-content: center;
+        border: 0.1rem solid $color3;
+        padding: 3%;
+        @media(max-width:1024px){
+            width: 30vw;
+        }
+        @media(max-width:600px){
+            width: 80vw;
+        }
+        button{
+            @include roundedButton($color3, $color1, $normalFont);
+            margin-top: 5%;
+        }
+    }
+}

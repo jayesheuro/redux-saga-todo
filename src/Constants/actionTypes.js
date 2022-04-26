@@ -1,0 +1,25 @@
+export const SIGNUP_START = "SIGNUP_START";
+export const SIGNUP_SUCCESS = "SIGNUP_SUCCESS";
+export const SIGNUP_FAIL = "SIGNUP_FAIL";
+
+export const LOGIN_START = "LOGIN_START";
+export const LOGIN_SUCCESS = "LOGIN_SUCCESS";
+export const LOGIN_FAIL = "LOGIN_FAIL";
+
+export const LOGOUT_USER = "LOGOUT_USER";
+
+export const GET_TODOS_START = "GET_TODOS_START";
+export const GET_TODOS_SUCCESS = "GET_TODOS_SUCCESS";
+export const GET_TODOS_FAIL = "GET_TODOS_FAIL";
+
+export const ADD_TODO_START = "ADD_TODO_START";
+export const ADD_TODO_SUCCESS = "ADD_TODO_SUCCESS";
+export const ADD_TODO_FAIL = "ADD_TODO_FAIL";
+
+export const EDIT_TODO_START = "EDIT_TODO_START";
+export const EDIT_TODO_SUCCESS = "EDIT_TODO_SUCCESS";
+export const EDIT_TODO_FAIL = "EDIT_TODO_FAIL";
+
+export const DELETE_TODO_START = "DELETE_TODO_START";
+export const DELETE_TODO_SUCCESS = "DELETE_TODO_SUCCESS";
+export const DELETE_TODO_FAIL = "DELETE_TODO_FAIL";
